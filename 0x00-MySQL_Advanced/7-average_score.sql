@@ -1,8 +1,8 @@
--- stored procedure get_average_scoreForUser;
+-- Creates a stored procedure ComputeAverageScoreForUser that
 -- computes and stores the average score for a student.
-DROP PROCEDURE IF EXISTS get_average_scoreForUser;
+DROP PROCEDURE IF EXISTS ComputeAverageScoreForUser;
 DELIMITER $$
-CREATE PROCEDURE get_average_scoreForUser; (user_id INT)
+CREATE PROCEDURE ComputeAverageScoreForUser (user_id INT)
 BEGIN
     DECLARE total_score INT DEFAULT 0;
     DECLARE projects_count INT DEFAULT 0;
